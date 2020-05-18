@@ -5,7 +5,7 @@ The course is described as:
 *"This course is designed to build a strong foundation in Computer Vision. You will get a solid understanding of all the tools in OpenCV for Image Processing, Computer Vision, Video Processing and the basics of AI."*  
 
 ## Week 1  
-### (Getting Started with Images)[src/week_one/01_getting_started.cpp]  
+### Getting Started with Images  
 * Basic Pixel Manipulation  
 * Loading and viewing images  
 * Saving images  
