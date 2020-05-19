@@ -8,5 +8,4 @@ using namespace cv;
 
 int main() {
     // Create empty matrix
-
 }
