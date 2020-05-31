@@ -31,4 +31,5 @@ int weekOne() {
   // Cleanup
   waitKey(0);
   destroyAllWindows();
+  return 0;
 }
