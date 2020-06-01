@@ -1,13 +1,13 @@
 // Getting Started
 #include <iostream>
-#include <opencv4/opencv2/opencv.hpp>
+#include <opencv2/opencv.hpp>
 
 using namespace cv;
 using namespace std;
 
 int main() {
   // Read in image
-  string imagePath = "/Users/jasonadam/code/opencv-cv1/imgs/sample_dog.png";
+  string imagePath = "/Users/jasonadam/github/opencv-cv1/imgs/sample_dog.png";
   Mat image = imread(imagePath, IMREAD_COLOR);
   Mat channel[3];
 
