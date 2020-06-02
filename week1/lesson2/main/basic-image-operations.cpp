@@ -1,6 +1,5 @@
 // Basic Image Operations
-#include <opencv2/core.hpp>
-#include <opencv2/highgui.hpp>
+#include <iostream>
 #include <opencv2/opencv.hpp>
 
 using namespace std;
@@ -36,6 +35,12 @@ int main() {
   cv::resize(image, scaleUp, Size(), scaleUpX, scaleUpY, INTER_LINEAR);
   cv::imshow("scaleFactor", scaleUp);
   std::cout << "Scaled up image size = " << scaleUp.size() << endl;
+
+  // Create image mask
+  namedWindow("maskedImage");
+  Mat mask;
+  inRange(image, Scalar(0, 0, 150), Scalar(100, 100, 255), mask);
+  cv::imshow("maskedImage", mask);
 
   // Cleanup
   waitKey(0);
